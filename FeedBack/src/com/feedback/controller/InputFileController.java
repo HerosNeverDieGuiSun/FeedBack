@@ -160,7 +160,7 @@ public String ClasstimeAddInfoInput(MultipartFile file, Model model, HttpServlet
 		TeacherOut t = new TeacherOut("2016215001","1","Ðì±¾Öù","2","ÔºÄÚ","555","5","56"
 				,"5565","665","555","2016215201","555","222");
 		model.addAttribute("teacherout", t);
-		session.setAttribute("teacherout", t);
+		//session.setAttribute("teacherout", t);
 		return "teacher/TeacherOutInfo";
 	}
 
