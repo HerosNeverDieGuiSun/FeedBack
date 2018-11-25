@@ -18,17 +18,17 @@
   <title>课表查询</title>
 
   <!-- Favicons -->
-  <link href="<%=path%>/teacher/img/favicon.png" rel="icon">
-  <link href="<%=path%>/teacher/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<%=path%>/img/favicon.png" rel="icon">
+  <link href="<%=path%>/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
-  <link href="<%=path%>/teacher/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<%=path%>/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
-  <link href="<%=path%>/teacher/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link href="<%=path%>/teacher/lib/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
+  <link href="<%=path%>/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="<%=path%>/lib/fullcalendar/bootstrap-fullcalendar.css" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="<%=path%>/teacher/css/style.css" rel="stylesheet">
-  <link href="<%=path%>/teacher/css/style-responsive.css" rel="stylesheet">
+  <link href="<%=path%>/css/style.css" rel="stylesheet">
+  <link href="<%=path%>/css/style-responsive.css" rel="stylesheet">
   <link href="<%=path%>/teacher/css/Schedule.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
   <script src="<%=path%>/teacher/lib/Timetables.min.js"></script>
@@ -64,7 +64,7 @@
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="<%=path%>/teacher/img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="profile.html"><img src="<%=path%>/img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">小明</h5>
           
           <li class="mt">
@@ -159,17 +159,17 @@
     <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
-  <script src="lib/jquery/jquery.min.js"></script>
-  <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
-  <script src="lib/fullcalendar/fullcalendar.min.js"></script>
-  <script src="lib/bootstrap/js/bootstrap.min.js"></script>
-  <script class="include" type="text/javascript" src="lib/jquery.dcjqaccordion.2.7.js"></script>
-  <script src="lib/jquery.scrollTo.min.js"></script>
-  <script src="lib/jquery.nicescroll.js" type="text/javascript"></script>
+  <script src="<%=path%>/lib/jquery/jquery.min.js"></script>
+  <script src="<%=path%>/lib/jquery-ui-1.9.2.custom.min.js"></script>
+  <script src="<%=path%>/lib/fullcalendar/fullcalendar.min.js"></script>
+  <script src="<%=path%>/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script class="include" type="text/javascript" src="<%=path%>/lib/jquery.dcjqaccordion.2.7.js"></script>
+  <script src="<%=path%>/lib/jquery.scrollTo.min.js"></script>
+  <script src="<%=path%>/lib/jquery.nicescroll.js" type="text/javascript"></script>
   <!--common script for all pages-->
-  <script src="lib/common-scripts.js"></script>
+  <script src="<%=path%>/lib/common-scripts.js"></script>
   <!--script for this page-->
-  <script src="lib/calendar-conf-events.js"></script>
+  <script src="<%=path%>/lib/calendar-conf-events.js"></script>
 </body>
 
 </html>
