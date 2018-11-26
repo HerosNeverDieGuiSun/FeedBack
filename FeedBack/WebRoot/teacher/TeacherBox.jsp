@@ -195,9 +195,11 @@
                       <c:if test="${feedback.agree==0}">
                       <td> 处理中</td>
                       </c:if>
+                      
                       <c:if test="${feedback.agree==1}">
                       <td> 同意</td>
                       </c:if>
+                      
                       <c:if test="${feedback.agree==2}">
                       <td> 不同意</td>
                       </c:if>
