@@ -72,28 +72,22 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <p class="centered"><a href="profile.html"><img src="img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">小明</h5>
           
-          <li class="mt">
-            <a class="active" href="TeacherInInfo.html">
+     	<li class="mt">
+            <a  class="active"  href="<%=path%>/teacher/GetTeacherInServlet">
               <i class="fa fa-dashboard"></i>
               <span>个人信息</span>
               </a>
           </li>
 		  <li class="mt">
-            <a  href="TeacherBox.html">
+            <a  href="<%=path%>/teacher/teacherfeedbackctrl">
               <i class="fa fa-envelope"></i>
               <span>查看反馈</span>
               </a>
           </li>
 		  <li class="mt">
-            <a  href="Exams.html">
-              <i class="fa fa-th"></i>
-              <span>查看考试</span>
-              </a>
-          </li>
-		  <li class="mt">
-            <a  href="Schedule.html">
+            <a  href="<%=path%>/ScheduleCtrl/ListScheduleInfo">
               <i class="fa fa-book"></i>
-              <span>课表</span>
+              <span>查看课表</span>
               </a>
           </li>
           

@@ -71,15 +71,9 @@
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">小红</h5>
-          
-          <li class="mt">
-            <a   href="BossInfo.html">
-              <i class="fa fa-dashboard"></i>
-              <span>个人信息</span>
-              </a>
-          </li>
+
 		  <li class="mt">
-            <a class="active" href="BossBox.html">
+            <a class="active" href="<%=path%>/leader/leaderfeedbackctrl">
               <i class="fa fa-envelope"></i>
               <span>查看反馈</span>
               </a>

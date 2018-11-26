@@ -67,28 +67,43 @@
           <p class="centered"><a href="profile.html"><img src="<%=path%>/teacher/img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">小明</h5>
           
-          <li class="mt">
-            <a  href="TeacherInInfo.html">
+          <c:if test="${sessionScope.teacherSchool != null}">
+            <li class="mt">
+            <a  href="<%=path%>/teacher/GetTeacherSchoolServlet">
               <i class="fa fa-dashboard"></i>
               <span>个人信息</span>
               </a>
-          </li>
+          	</li>
+          </c:if>
+          
+          <c:if test="${sessionScope.teacherIn != null}">
+            <li class="mt">
+            <a  href="<%=path%>/teacher/GetTeacherInServlet">
+              <i class="fa fa-dashboard"></i>
+              <span>个人信息</span>
+              </a>
+           </li>
+          </c:if>
+          
+          <c:if test="${sessionScope.teacherOut != null}">
+            <li class="mt">
+            <a  href="<%=path%>/teacher/GetTeacherOutServlet">
+              <i class="fa fa-dashboard"></i>
+              <span>个人信息</span>
+              </a>
+           </li>
+          </c:if>
+          
 		  <li class="mt">
-            <a  href="TeacherBox.html">
+            <a  href="<%=path%>/teacher/teacherfeedbackctrl">
               <i class="fa fa-envelope"></i>
               <span>查看反馈</span>
               </a>
           </li>
 		  <li class="mt">
-            <a  href="Exams.html">
-              <i class="fa fa-th"></i>
-              <span>查看考试</span>
-              </a>
-          </li>
-		  <li class="mt">
-            <a   class="active" href="Schedule.html">
+            <a   class="active" href="<%=path%>/ScheduleCtrl/ListScheduleInfo">
               <i class="fa fa-book"></i>
-              <span>课表</span>
+              <span>查看课表</span>
               </a>
           </li>
           

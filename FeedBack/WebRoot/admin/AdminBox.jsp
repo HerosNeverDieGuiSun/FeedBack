@@ -69,7 +69,7 @@
           <h5 class="centered">小红</h5>
           
           <li class="mt">
-            <a class="active" href="./allfeedbackctrl">
+            <a class="active" href="<%=path%>/admin/allfeedbackctrl">
               <i class="fa fa-dashboard"></i>
               <span>查看反馈</span>
               </a>
@@ -78,6 +78,12 @@
             <a  href="AuditInfo.html">
               <i class="fa fa-envelope"></i>
               <span>审核教师信息</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="<%=path%>/ClasstimeAddManageController/listAllClasstimeAddByPage">
+              <i class="fa fa-envelope"></i>
+              <span>管理课表信息</span>
               </a>
           </li>
 		  
@@ -177,7 +183,7 @@
                       <c:if test="${feedback.agree==2}">
                       <td> 不同意</td>
                       </c:if>
-                      <form action='./ViewContentCtrl' method="POST">
+                      <form action='<%=path%>/admin/ViewContentCtrl' method="POST">
                       <input type = hidden name='sno' value=${ feedback.sno}>
                       <input type = hidden name='ctno' value=${ feedback.ctno}>
                       <input type = hidden name='fbtime' value="${ feedback.fbtime}">
@@ -192,16 +198,18 @@
                       </c:forEach >
                     </tbody>
                   </table>
-                  <p align = "center">
+                  
+                </div>
+                
+              </div>
+            </section>
+            <p align = "center">
          				<a href='./allfeedbackctrl?page=0'>首 页</a> 
          				<a href='./allfeedbackctrl?page=prev'>上一页</a>
           
          				<a href='./allfeedbackctrl?page=next'>下一页</a>
          				<a href='./allfeedbackctrl?page=${requestScope.lastPage}'>末 页</a>
     			  </p>    
-                </div>
-              </div>
-            </section>
           </div>
         </div>
       </section>

@@ -107,25 +107,25 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
           <!-- 导入用户名 -->
           <h5 class="centered">小红</h5>
           <li class="mt">
-            <a href="TeacherInInfo.html">
+            <a href="<%=path%>/GetTeacherInServlet">
               <i class="fa fa-dashboard"></i>
               <span>教师信息</span>
             </a>
           </li>
 		      <li class="mt">
-            <a class="active" href="TeacherInInfo.html">
+            <a class="active" href="<%=path%>/StudentManageController/listAllStudentByPage">
               <i class="fa fa-dashboard"></i>
               <span>学生信息</span>
             </a>
           </li>
 		      <li class="mt">
-            <a href="TeacherInInfo.html">
+            <a href="<%=path%>/LeaderCtrl/ListLeader">
               <i class="fa fa-dashboard"></i>
               <span>领导信息</span>
             </a>
           </li>
 		      <li class="mt">
-            <a href="TeacherInInfo.html">
+            <a href="<%=path%>/AdmManageController/listAllAdmByPage">
               <i class="fa fa-dashboard"></i>
               <span>管理员信息</span>
             </a>

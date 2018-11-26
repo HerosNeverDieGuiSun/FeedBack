@@ -17,16 +17,16 @@
   <title>领导意见箱</title>
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<%=path%>/leader/img/favicon.png" rel="icon">
+  <link href="<%=path%>/leader/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<%=path%>/leader/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
-  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="<%=path%>/leader/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet">
+  <link href="<%=path%>/leader/css/style.css" rel="stylesheet">
+  <link href="<%=path%>/leader/css/style-responsive.css" rel="stylesheet">
 
   <!-- =======================================================
     Template Name: Dashio
@@ -68,14 +68,8 @@
           <p class="centered"><a href="profile.html"><img src="img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">小红</h5>
           
-          <li class="mt">
-            <a   href="BossInfo.html">
-              <i class="fa fa-dashboard"></i>
-              <span>个人信息</span>
-              </a>
-          </li>
 		  <li class="mt">
-            <a class="active" href="./leaderfeedbackctrl">
+            <a class="active" href="<%=path%>/leader/leaderfeedbackctrl">
               <i class="fa fa-envelope"></i>
               <span>查看反馈</span>
               </a>
@@ -178,7 +172,7 @@
                       <c:if test="${feedback.agree==2}">
                       <td> 不同意</td>
                       </c:if>
-                      <form action='./ViewContentCtrl' method="POST">
+                      <form action='<%=path%>/leader/ViewContentCtrl' method="POST">
                       <input type = hidden name='sno' value=${ feedback.sno}>
                       <input type = hidden name='ctno' value=${ feedback.ctno}>
                       <input type = hidden name='fbtime' value="${ feedback.fbtime}">
@@ -193,16 +187,17 @@
                       </c:forEach >
                     </tbody>
                   </table>
-                   <p align = "center">
+                   
+                </div>
+              </div>
+            </section>
+            <p align = "center">
          				<a href='./leaderfeedbackctrl?page=0'>首 页</a> 
          				<a href='./leaderfeedbackctrl?page=prev'>上一页</a>
           
          				<a href='./leaderfeedbackctrl?page=next'>下一页</a>
          				<a href='./leaderfeedbackctrl?page=${requestScope.lastPage}'>末 页</a>
     			  </p>    
-                </div>
-              </div>
-            </section>
           </div>
         </div>
       </section>

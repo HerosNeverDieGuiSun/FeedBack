@@ -39,19 +39,19 @@ public class UserLoginController {
 			session.setAttribute("student", student);
 			return "student/StudentInfo";
 		} else if (teacherIn != null) {
-			session.setAttribute("user", teacherIn);
+			session.setAttribute("teacherIn", teacherIn);
 			return "teacher/TeacherView";
 		} else if (teacherOut != null) {
-			session.setAttribute("user", teacherOut);
+			session.setAttribute("teacherOut", teacherOut);
 			return "teacher/TeacherView";
 		} else if (teacherSchool != null) {
-			session.setAttribute("user", teacherSchool);
+			session.setAttribute("teacherSchool", teacherSchool);
 			return "teacher/TeacherView";
 		} else if (leader != null) {
-			session.setAttribute("user", leader);
+			session.setAttribute("leader", leader);
 			return "leader/BossView";
 		} else if (superAdm != null) {
-			session.setAttribute("user", superAdm);
+			session.setAttribute("superAdm", superAdm);
 			return "redirect:/GetTeacherInServlet";
 		}
 		

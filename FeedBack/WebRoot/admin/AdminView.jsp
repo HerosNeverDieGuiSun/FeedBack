@@ -73,7 +73,7 @@
           <h5 class="centered">小红</h5>
           
          <li class="mt">
-            <a class="active" href="./allfeedbackctrl">
+            <a class="active" href="<%=path%>/admin/allfeedbackctrl">
               <i class="fa fa-dashboard"></i>
               <span>查看反馈</span>
               </a>
@@ -82,6 +82,12 @@
             <a  href="AuditInfo.html">
               <i class="fa fa-envelope"></i>
               <span>审核教师信息</span>
+              </a>
+          </li>
+          <li class="mt">
+            <a href="<%=path%>/ClasstimeAddManageController/listAllClasstimeAddByPage">
+              <i class="fa fa-envelope"></i>
+              <span>管理课表信息</span>
               </a>
           </li>
 		  

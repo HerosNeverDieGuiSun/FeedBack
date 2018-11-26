@@ -66,28 +66,28 @@
           <p class="centered"><a href="profile.html"><img src="<%=basePath %>student/img/ui-sam.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">小红</h5>
           
-          <li class="mt">
-            <a href="<%=basePath %>student/StudentInfo.html">
+            <li class="mt">
+            <a  href="<%=path%>/StudentCtrl/ListStudentInfo">
               <i class="fa fa-dashboard"></i>
               <span>个人信息</span>
               </a>
           </li>
-		  <li class="mt">
-            <a  href="<%=basePath %>student/SendCollegeMsg.jsp">
+		   <li class="mt">
+             <a  href="<%=path%>/student/SendCollegeMsg.jsp">
               <i class="fa fa-envelope"></i>
               <span>提交关于学院的反馈</span>
               </a>
           </li>
           <li class="mt">
-             <a  href="../StudentCtrl/SelectStudentCourseCtrl">
+             <a class="active" href="<%=path%>/StudentCtrl/SelectStudentCourseCtrl">
               <i class="fa fa-envelope"></i>
               <span>提交关于老师的反馈</span>
               </a>
           </li>
-		  <li class="mt">
-            <a  href="<%=basePath %>student/MsgSubmit.jsp">
+		    <li class="mt">
+             <a  href="<%=path%>/student/myfeedbackctrl">
               <i class="fa fa-envelope"></i>
-              <span>查看反馈回复</span>
+              <span>查看历史反馈</span>
               </a>
           </li>
 		  

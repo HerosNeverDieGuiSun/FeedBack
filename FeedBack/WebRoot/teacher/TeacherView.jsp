@@ -1,5 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ page language="java" import="java.util.*,com.feedback.domain.*" pageEncoding="utf-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%
+	String path = request.getContextPath();
+%>
+<jsp:directive.page import="java.util.List"/>
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,24 +13,24 @@
   <meta name="description" content="">
   <meta name="author" content="Dashboard">
   <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
-  <title>领导信息展示</title>
+  <title>教师信息展示</title>
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
-  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="<%=path%>/teacher/img/favicon.png" rel="icon">
+  <link href="<%=path%>/teacher/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Bootstrap core CSS -->
-  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="<%=path%>/teacher/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <!--external css-->
-  <link href="lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap-fileupload/bootstrap-fileupload.css" />
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap-datepicker/css/datepicker.css" />
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap-daterangepicker/daterangepicker.css" />
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap-timepicker/compiled/timepicker.css" />
-  <link rel="stylesheet" type="text/css" href="lib/bootstrap-datetimepicker/datertimepicker.css" />
+  <link href="<%=path%>/teacher/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="<%=path%>/teacher/lib/bootstrap-fileupload/bootstrap-fileupload.css" />
+  <link rel="stylesheet" type="text/css" href="<%=path%>/teacher/lib/bootstrap-datepicker/css/datepicker.css" />
+  <link rel="stylesheet" type="text/css" href="<%=path%>/teacher/lib/bootstrap-daterangepicker/daterangepicker.css" />
+  <link rel="stylesheet" type="text/css" href="<%=path%>/teacher/lib/bootstrap-timepicker/compiled/timepicker.css" />
+  <link rel="stylesheet" type="text/css" href="<%=path%>/teacher/lib/bootstrap-datetimepicker/datertimepicker.css" />
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/style-responsive.css" rel="stylesheet">
+  <link <%=path%>/teacher/href="css/style.css" rel="stylesheet">
+  <link <%=path%>/teacher/href="css/style-responsive.css" rel="stylesheet">
 
   <!-- =======================================================
     Template Name: Dashio
@@ -45,7 +51,7 @@
         <div class="fa fa-bars tooltips" data-placement="right"></div>
       </div>
       <!--logo start-->
-      <a href="index.html" class="logo"><b>领导端</b></a>
+      <a href="index.html" class="logo"><b>教师端</b></a>
       <!--logo end-->
       
       <div class="top-menu">
@@ -64,22 +70,46 @@
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
           <p class="centered"><a href="profile.html"><img src="img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
-          <h5 class="centered">小红</h5>
+          <h5 class="centered">小明</h5>
           
-          <li class="mt">
-            <a   href="BossInfo.html">
+    	<c:if test="${sessionScope.teacherSchool != null}">
+                      <li class="mt">
+            <a  href="<%=path%>/teacher/GetTeacherSchoolServlet">
               <i class="fa fa-dashboard"></i>
               <span>个人信息</span>
               </a>
           </li>
+          </c:if>
+          
+          <c:if test="${sessionScope.teacherIn != null}">
+                      <li class="mt">
+            <a  href="<%=path%>/teacher/GetTeacherInServlet">
+              <i class="fa fa-dashboard"></i>
+              <span>个人信息</span>
+              </a>
+          </li>
+          </c:if>
+          
+          <c:if test="${sessionScope.teacherOut != null}">
+                      <li class="mt">
+            <a  href="<%=path%>/teacher/GetTeacherOutServlet">
+              <i class="fa fa-dashboard"></i>
+              <span>个人信息</span>
+              </a>
+          </li>
+          </c:if>
 		  <li class="mt">
-            <a class="active" href="BossBox.html">
+            <a   class="active"  href="<%=path%>/teacher/teacherfeedbackctrl">
               <i class="fa fa-envelope"></i>
               <span>查看反馈</span>
               </a>
           </li>
-		 
-		  
+		  <li class="mt">
+            <a  href="<%=path%>/ScheduleCtrl/ListScheduleInfo">
+              <i class="fa fa-book"></i>
+              <span>查看课表</span>
+              </a>
+          </li>
           
           
         </ul>
@@ -87,7 +117,7 @@
       </div>
     </aside>
     <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
+     <!-- **********************************************************************************************************************************************************
         MAIN CONTENT
         *********************************************************************************************************************************************************** -->
     <!--main content start-->
@@ -144,10 +174,8 @@
                </c:forEach>
                 </div>
                 <div class="compose-btn pull-left">
-                  <button class="btn btn-sm "><i class="fa fa-arrow-right"></i><a href="./SendTeacherCtrl" >发给老师</a></button>
-                  <button class="btn btn-sm "><i class="fa fa-arrow-right"></i><a href="./SendLeaderCtrl" >发给领导</a></button>
-                  <button class="btn btn-sm "><i class="fa fa-arrow-right"></i><a href="./AgreeCtrl" > 同意</a></button>
-                  <button class="btn btn-sm "><i class="fa fa-arrow-right"></i><a href="./DisagreeCtrl" > 不同意</a></button>
+                  <button class="btn btn-sm "><i class="fa fa-arrow-right"></i><a href="./TeacherAgreeCtrl" > 同意</a></button>
+                  <button class="btn btn-sm "><i class="fa fa-arrow-right"></i><a href="./TeacherDisagreeCtrl" > 不同意</a></button>
                   <button class="btn btn-sm tooltips" data-original-title="Trash" data-toggle="tooltip" data-placement="top" title=""><i class="fa fa-trash-o"></i></button>
                 </div>
               </div>
@@ -159,8 +187,7 @@
     </section>
     <!-- /MAIN CONTENT -->
     <!--main content end-->
-                
-   
+    
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="lib/jquery/jquery.min.js"></script>

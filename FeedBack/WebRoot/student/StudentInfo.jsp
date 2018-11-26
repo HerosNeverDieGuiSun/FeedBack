@@ -78,24 +78,29 @@
           
           
           <li class="mt">
-            <a  class="active"  href="StudentInfo.html">
+            <a class="active" href="<%=path%>/StudentCtrl/ListStudentInfo">
               <i class="fa fa-dashboard"></i>
               <span>个人信息</span>
               </a>
           </li>
 		   <li class="mt">
-             <a  href="SendCollegeMsg.jsp">
+             <a  href="<%=path%>/student/SendCollegeMsg.jsp">
               <i class="fa fa-envelope"></i>
               <span>提交关于学院的反馈</span>
               </a>
           </li>
           <li class="mt">
-             <a  href="../StudentCtrl/SelectStudentCourseCtrl">
+             <a  href="<%=path%>/StudentCtrl/SelectStudentCourseCtrl">
               <i class="fa fa-envelope"></i>
               <span>提交关于老师的反馈</span>
               </a>
           </li>
-		  
+		    <li class="mt">
+             <a  href="<%=path%>/student/myfeedbackctrl">
+              <i class="fa fa-envelope"></i>
+              <span>查看历史反馈</span>
+              </a>
+          </li>
           
           
         </ul>

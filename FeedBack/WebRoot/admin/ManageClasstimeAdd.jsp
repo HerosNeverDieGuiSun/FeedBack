@@ -122,7 +122,7 @@
           <h5 class="centered">小红</h5>
           
          <li class="mt">
-            <a  href="./allfeedbackctrl">
+            <a  href="<%=path%>/admin/allfeedbackctrl">
               <i class="fa fa-dashboard"></i>
               <span>查看反馈</span>
               </a>
@@ -134,7 +134,7 @@
               </a>
           </li>
           <li class="mt">
-            <a  class="active" href="../ClasstimeAddManageController/listAllClasstimeAddByPage">
+            <a  class="active" href="<%=path%>/ClasstimeAddManageController/listAllClasstimeAddByPage">
               <i class="fa fa-envelope"></i>
               <span>管理课表信息</span>
               </a>
