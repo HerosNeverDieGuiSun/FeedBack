@@ -189,11 +189,11 @@
                     </tbody>
                   </table>
                   <p align = "center">
-         				<a href='./SelectScCtrl?page=0'>首 页</a> 
-         				<a href='./SelectScCtrl?page=prev'>上一页</a>
+         				<a href='./SelectStudentCourseCtrl?page=0'>首 页</a> 
+         				<a href='./SelectStudentCourseCtrl?page=prev'>上一页</a>
           
-         				<a href='./SelectScCtrl?page=next'>下一页</a>
-         				<a href='./SelectScCtrl?page=${requestScope.lastPage}'>末 页</a>
+         				<a href='./SelectStudentCourseCtrl?page=next'>下一页</a>
+         				<a href='./SelectStudentCourseCtrl?page=${requestScope.lastPage}'>末 页</a>
     			  </p>  
                 </div>
               </div>

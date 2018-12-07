@@ -15,6 +15,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.feedback.domain.FeedbackRecord;
+import com.feedback.domain.Student;
+import com.feedback.domain.TeacherIn;
+import com.feedback.domain.TeacherOut;
+import com.feedback.domain.TeacherSchool;
 import com.feedback.service.FeedbackRecordService;
 import com.feedback.state.FeedbackRecordQueryState;
 
@@ -40,7 +44,8 @@ public class FeedbackRecordController {
 		}
 		
 		List<FeedbackRecord> myFeedback = null;
-		String sno = "2016215255";
+		Student student = (Student)session.getAttribute("student");
+		String sno=student.getSno();
 		try {
 			int lastPage = feedbackSv.getLastPage(state);
 			state.setLastPage(lastPage);
@@ -74,7 +79,19 @@ public class FeedbackRecordController {
 		}
 		
 		List<FeedbackRecord> teacherFeedback = null;
-		String tNo = "2016215254";
+		String tNo = null;
+		if(session.getAttribute("teacherIn") != null) {
+			TeacherIn teacher = (TeacherIn)session.getAttribute("teacherIn");
+			tNo=teacher.getTino();
+		}
+		if(session.getAttribute("teacherOut") != null) {
+			TeacherOut teacher = (TeacherOut)session.getAttribute("teacherOut");
+			tNo=teacher.getTono();
+		}
+		if(session.getAttribute("teacherSchool") != null) {
+			TeacherSchool teacher = (TeacherSchool)session.getAttribute("teacherSchool");
+			tNo=teacher.getTsno();
+		}
 		try {
 			int lastPage = feedbackSv.getLastPage(state);
 			state.setLastPage(lastPage);

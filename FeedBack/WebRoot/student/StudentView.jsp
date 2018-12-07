@@ -125,8 +125,7 @@
                       <c:forEach var="feedback" items="${requestScope.concreteFeedback}">
                       <tr class="unread">
                       <td> ${feedback.sno}</td>
-                      <td> ${feedback.ctno}</td>
-                      <td> ${feedback.fbtime}</td>                    
+                      <td> ${feedback.ctno}</td>                  
                       </tr>
                       
                       

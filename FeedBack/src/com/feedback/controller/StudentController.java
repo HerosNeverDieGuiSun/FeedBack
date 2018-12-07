@@ -34,8 +34,8 @@ public class StudentController {
 	private StudentService studentServ;
 	@RequestMapping(value="ListStudentInfo" , method = RequestMethod.GET)
 	public String listStudentInfo(Model model , HttpSession session){
-		
-		String sno="2016215257";
+		Student student = (Student)session.getAttribute("student");
+		String sno=student.getSno();
 		Student stu=new Student();
 		
 		try{

@@ -257,11 +257,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
                   </div>
                 </div>
                 
-				<div class="form-group">
-                  <div class="col-lg-offset-2 col-lg-10">
-                    <button class="btn btn-theme" type="submit">提交</button>
-                  </div>
-                </div>
                
 				
               </form:form>

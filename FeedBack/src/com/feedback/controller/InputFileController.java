@@ -157,10 +157,10 @@ public String ClasstimeAddInfoInput(MultipartFile file, Model model, HttpServlet
 	@RequestMapping(value="/teacher/GetTeacherOutServlet")
 	public String getTeacherOut(Model model,HttpSession session) {
 		
-		TeacherOut teacherout = (TeacherOut) session.getAttribute("user");
+		TeacherOut teacherout = (TeacherOut) session.getAttribute("teacherOut");
 		/*TeacherOut t = new TeacherOut("2016215001","1","徐本柱","2","院内","555","5","56"
 				,"5565","665","555","2016215201","555","222");*/
-		System.out.println(teacherout.toString());
+		//System.out.println(teacherout.toString());
 		model.addAttribute("teacherout", teacherout);
 		return "teacher/TeacherOutInfo";
 	}
@@ -168,7 +168,7 @@ public String ClasstimeAddInfoInput(MultipartFile file, Model model, HttpServlet
 	@RequestMapping(value="/teacher/GetTeacherInServlet")
 	public String getTeacherIn(Model model,HttpSession session) {
 		
-		TeacherIn teacherin = (TeacherIn) session.getAttribute("user");
+		TeacherIn teacherin = (TeacherIn) session.getAttribute("teacherIn");
 		/*TeacherOut t = new TeacherOut("2016215001","1","徐本柱","2","院内","555","5","56"
 				,"5565","665","555","2016215201","555","222");*/
 		System.out.println(teacherin.toString());
@@ -179,10 +179,10 @@ public String ClasstimeAddInfoInput(MultipartFile file, Model model, HttpServlet
 	@RequestMapping(value="/teacher/GetTeacherSchoolServlet")
 	public String getTeacherSchool(Model model,HttpSession session) {
 		
-		TeacherSchool teacherschool = (TeacherSchool) session.getAttribute("user");
+		TeacherSchool teacherschool = (TeacherSchool) session.getAttribute("teacherSchool");
 		/*TeacherOut t = new TeacherOut("2016215001","1","徐本柱","2","院内","555","5","56"
 				,"5565","665","555","2016215201","555","222");*/
-		System.out.println(teacherschool.toString());
+		//System.out.println(teacherschool.toString());
 		model.addAttribute("teacherschool", teacherschool);
 		return "teacher/TeacherSchoolInfo";
 	}

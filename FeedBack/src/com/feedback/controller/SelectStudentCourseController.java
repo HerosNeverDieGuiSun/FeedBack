@@ -11,6 +11,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.feedback.domain.Student;
 import com.feedback.domain.StudentCourse;
 import com.feedback.exception.StudentCourseException;
 import com.feedback.service.StudentCourseService;
@@ -24,7 +25,7 @@ public class SelectStudentCourseController {
 	
 	@RequestMapping(value="SelectStudentCourseCtrl",method=RequestMethod.GET)
 	public String select(Model model, HttpSession session,String page) throws Exception {
-		//Student stu = (Student)session.getAttribute("Student");
+		Student stu = (Student)session.getAttribute("student");
 		StudentCourseQueryState state = null;
 		if (page == null) {
 			page = "0";
@@ -41,12 +42,12 @@ public class SelectStudentCourseController {
 		try {
 			int lastPage = scservice.getLastPage(state);
 			state.setLastPage(lastPage);
-			list = scservice.selectStudentCourse("2016215251",state,page);
+			list = scservice.selectStudentCourse(stu.getSno(),state,page);
 			session.setAttribute("StudentCourseQueryState", state);
 			model.addAttribute("lastPage", lastPage);
-			for(StudentCourse sc : list) {
-				System.out.println(sc.toString());
-			}
+			//for(StudentCourse sc : list) {
+				//System.out.println(sc.toString());
+			//}
 		} catch (StudentCourseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

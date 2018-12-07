@@ -52,9 +52,9 @@ public class StudentCourseService {
 		map.put("rowCount", WebUtil.MAX_PAGE_LINES);
 		map.put("sno", studentno);
 		List<StudentCourse> list = scDAO.queryByNo(map);
-		for(StudentCourse sc : list) {
-			System.out.println(sc.toString());
-		}
+		//for(StudentCourse sc : list) {
+			//System.out.println(sc.toString());
+		//}
 		return list;
 	}
 }

@@ -2,6 +2,7 @@ package com.feedback.dao;
 
 import java.util.Map;
 
+import com.feedback.domain.Administrators;
 import com.feedback.domain.Leader;
 import com.feedback.domain.Student;
 import com.feedback.domain.SuperAdm;
@@ -16,4 +17,5 @@ public interface LoginMapper {
 	public TeacherSchool selectTeacherSchool(Map<String, Object> map);
 	public Leader selectLeader(Map<String, Object> map);
 	public SuperAdm selectSuperAdm(Map<String, Object> map);
+	public Administrators selectAdmin(Map<String, Object> map);
 }

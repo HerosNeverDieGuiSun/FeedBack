@@ -102,7 +102,7 @@ public class SendfeedbackController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-		return "redirect:allfeedbackctrl";
+		return "redirect:leaderfeedbackctrl";
 	}
 	
 	@RequestMapping(value="/leader/LeaderAgreeCtrl", method=RequestMethod.GET)
@@ -118,7 +118,7 @@ public class SendfeedbackController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-		return "redirect:allfeedbackctrl";
+		return "redirect:leaderfeedbackctrl";
 	}
 	
 	@RequestMapping(value="/leader/LeaderDisagreeCtrl", method=RequestMethod.GET)
@@ -134,7 +134,7 @@ public class SendfeedbackController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-		return "redirect:allfeedbackctrl";
+		return "redirect:leaderfeedbackctrl";
 	}
 	
 	@RequestMapping(value="/teacher/TeacherAgreeCtrl", method=RequestMethod.GET)
@@ -150,7 +150,7 @@ public class SendfeedbackController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-		return "redirect:allfeedbackctrl";
+		return "redirect:teacherfeedbackctrl";
 	}
 	
 	@RequestMapping(value="/teacher/TeacherDisagreeCtrl", method=RequestMethod.GET)
@@ -166,6 +166,6 @@ public class SendfeedbackController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
-		return "redirect:allfeedbackctrl";
+		return "redirect:teacherfeedbackctrl";
 	}
 }

@@ -127,12 +127,6 @@
               <span>查看反馈</span>
               </a>
           </li>
-		  <li class="mt">
-            <a  href="AuditInfo.html">
-              <i class="fa fa-envelope"></i>
-              <span>审核教师信息</span>
-              </a>
-          </li>
           <li class="mt">
             <a  class="active" href="<%=path%>/ClasstimeAddManageController/listAllClasstimeAddByPage">
               <i class="fa fa-envelope"></i>

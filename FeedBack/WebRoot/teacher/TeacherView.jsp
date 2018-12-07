@@ -80,8 +80,8 @@
               </a>
           </li>
           </c:if>
-          
-          <c:if test="${sessionScope.teacherIn != null}">
+         
+         <c:if test="${sessionScope.teacherIn != null}">
                       <li class="mt">
             <a  href="<%=path%>/teacher/GetTeacherInServlet">
               <i class="fa fa-dashboard"></i>
@@ -89,7 +89,7 @@
               </a>
           </li>
           </c:if>
-          
+         
           <c:if test="${sessionScope.teacherOut != null}">
                       <li class="mt">
             <a  href="<%=path%>/teacher/GetTeacherOutServlet">
@@ -158,8 +158,7 @@
                       <c:forEach var="feedback" items="${requestScope.concreteFeedback}">
                       <tr class="unread">
                       <td> ${feedback.sno}</td>
-                      <td> ${feedback.ctno}</td>
-                      <td> ${feedback.fbtime}</td>                    
+                      <td> ${feedback.ctno}</td>                   
                       </tr>
                       
                       

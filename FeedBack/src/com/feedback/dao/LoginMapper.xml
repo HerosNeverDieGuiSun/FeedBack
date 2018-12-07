@@ -23,6 +23,10 @@
 		select * from leader where lno=#{lno} and lpsw=#{lpsw}
 	</select>
 	
+	<select id="selectAdmin" resultType="Administrators">
+		select * from adm where admno=#{admno} and admpsw=#{admpsw}
+	</select>
+	
 	<select id="selectSuperAdm" resultType="SuperAdm">
 		select * from superadm where superno=#{superno} and superpsw=#{superpsw}
 	</select>

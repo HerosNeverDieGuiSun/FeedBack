@@ -5,13 +5,13 @@
 	<select id="showCname" resultType="Schedule" parameterType="String">
 		select cname from course where cno=(
 			select cno from classteach where ctno=(
-				select ctno from teachin where tino=#{tino}));
+				select ctno from teachout where tono=#{tino}));
 		
 		
 	</select>
 	<select id="showCourseInfo" resultType="Schedule" parameterType="String">
 		select `add`,startweek,endweek,day,startsection,endsection from classtimeadd where ctno=
-			(select ctno from teachin where tino=#{tino});
+			(select ctno from teachout where tono=#{tino});
 	</select>
 	
 	

@@ -32,7 +32,10 @@ public class LoginFilter implements Filter {
 		HttpSession session = req.getSession();
 		HttpServletResponse resp = (HttpServletResponse) response;
 		
-		if (session.getAttribute("user") == null) {
+		if (session.getAttribute("superAdm") == null && session.getAttribute("student") == null &&
+				session.getAttribute("teacherIn") == null && session.getAttribute("teacherOut") == null &&
+				session.getAttribute("teacherSchool") == null && session.getAttribute("leader") == null &&
+				session.getAttribute("admin") == null) {
 			System.out.println("null");
 			PrintWriter writer = response.getWriter();
 			writer.print("<script type=\"text/javascript\">alert(\"Please log in\");</script>");

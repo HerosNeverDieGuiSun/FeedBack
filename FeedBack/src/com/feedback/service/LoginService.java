@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Service;
 
 import com.feedback.dao.LoginMapper;
+import com.feedback.domain.Administrators;
 import com.feedback.domain.Leader;
 import com.feedback.domain.Student;
 import com.feedback.domain.SuperAdm;
@@ -68,5 +69,13 @@ public class LoginService {
 		map.put("superpsw", userpsw);
 		SuperAdm superAdm = loginMapper.selectSuperAdm(map);
 		return superAdm;
+	}
+
+	public Administrators checkAdmin(String username, String userpsw) {
+		Map<String, Object> map = new HashedMap<String, Object>();
+		map.put("admno", username);
+		map.put("admpsw", userpsw);
+		Administrators adm = loginMapper.selectAdmin(map);
+		return adm;
 	}
 }

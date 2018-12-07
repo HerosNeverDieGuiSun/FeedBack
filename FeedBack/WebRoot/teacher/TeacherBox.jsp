@@ -125,57 +125,9 @@
               <header class="panel-heading wht-bg">
                 <h4 class="gen-case">
                     意见箱
-                    <form action="#" class="pull-right mail-src-position">
-                      <div class="input-append">
-                        <input type="text" class="form-control " placeholder="搜索意见">
-                      </div>
-                    </form>
                   </h4>
               </header>
               <div class="panel-body minimal">
-                <div class="mail-option">
-                  <div class="chk-all">
-                    <div class="pull-left mail-checkbox">
-                      <input type="checkbox" class="">
-                    </div>
-                    <div class="btn-group">
-                      <a data-toggle="dropdown" href="#" class="btn mini all">
-                        全部
-                        <i class="fa fa-angle-down "></i>
-                        </a>
-                      <ul class="dropdown-menu">
-                        <li><a href="#"> 已读</a></li>
-                        <li><a href="#"> 未读</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="btn-group">
-                    <a data-original-title="Refresh" data-placement="top" data-toggle="dropdown" href="#" class="btn mini tooltips">
-                      <i class=" fa fa-refresh"></i>
-                      </a>
-                  </div>
-                  <div class="btn-group hidden-phone">
-                    <a data-toggle="dropdown" href="#" class="btn mini blue">
-                      操作
-                      <i class="fa fa-angle-down "></i>
-                      </a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#"><i class="fa fa-pencil"></i> 标记为已读</a></li>
-                      <li><a href="#"><i class="fa fa-ban"></i> 标记为未处理</a></li>
-                      <li class="divider"></li>
-                      <li><a href="#"><i class="fa fa-trash-o"></i> 删除</a></li>
-                    </ul>
-                  </div>               
-                  <ul class="unstyled inbox-pagination">
-                    <li><span>1-50 of 99</span></li>
-                    <li>
-                      <a class="np-btn" href="#"><i class="fa fa-angle-left  pagination-left"></i></a>
-                    </li>
-                    <li>
-                      <a class="np-btn" href="#"><i class="fa fa-angle-right pagination-right"></i></a>
-                    </li>
-                  </ul>
-                </div>
                 <div class="table-inbox-wrap ">
                   <table class="table table-inbox table-hover">
                     <tbody>                     
@@ -199,7 +151,7 @@
                       <c:if test="${feedback.agree==1}">
                       <td> 同意</td>
                       </c:if>
-                      
+                   
                       <c:if test="${feedback.agree==2}">
                       <td> 不同意</td>
                       </c:if>
