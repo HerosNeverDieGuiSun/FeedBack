@@ -388,14 +388,6 @@ public void inputLeaderInfo(MultipartFile file, String path) {
 				XSSFRow row = sheet.getRow(i);
 				if (row == null) break;
 
-			
-				row.getCell(0).setCellType(CellType.STRING);
-				row.getCell(1).setCellType(CellType.STRING);
-				map.put("admno", row.getCell(0).getStringCellValue());
-				map.put("admpsw", row.getCell(1).getStringCellValue());
-				
-				inputFileDao.inputAdmInfo(map);
-
 				row.getCell(0).setCellType(CellType.STRING);
 				map.put("ctno", row.getCell(0).getStringCellValue());
 				map.put("add", row.getCell(1).getStringCellValue());

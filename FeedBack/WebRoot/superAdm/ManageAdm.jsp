@@ -34,13 +34,6 @@
   <!-- Custom styles for this template -->
   <link href="<%=path%>/superAdm/css/style.css" rel="stylesheet">
   <link href="<%=path%>/superAdm/css/style-responsive.css" rel="stylesheet">
-
-  <!-- =======================================================
-    Template Name: Dashio
-    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
   <style>
 	file{
 		font-size:10px;
@@ -92,10 +85,6 @@
 
 <body>
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-    <!--header start-->
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right"></div>
@@ -150,11 +139,6 @@
         <!-- sidebar menu end-->
       </div>
     </aside>
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
    <section id="main-content">
       <section class="wrapper">
         
@@ -297,11 +281,6 @@
       </section>
     </section>
 	</section>
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
     
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="<%=path %>/superAdm/lib/jquery/jquery.min.js"></script>

@@ -62,6 +62,6 @@ public class UserLoginController {
 		}
 		
 		request.setAttribute("usererror", "用户名或密码错误");
-		return "Login";
+		return "index";
 	}
 }

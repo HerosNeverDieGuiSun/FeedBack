@@ -37,10 +37,6 @@
 
 <body>
  <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-    <!--header start-->
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right"></div>
@@ -55,11 +51,6 @@
         </ul>
       </div>
     </header>
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
@@ -112,11 +103,6 @@
         <!-- sidebar menu end-->
       </div>
     </aside>
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
     <section id="main-content">
       <section class="wrapper">
       <div id="coursesTable"></div>
@@ -163,17 +149,9 @@
  
 
 		</script>
-        <!-- page end-->
       </section>
-      <!-- /wrapper -->
     </section>
-    <!-- /MAIN CONTENT -->
-    <!--main content end-->
-    <!--footer start-->
-    
-    <!--footer end-->
   </section>
-  <!-- js placed at the end of the document so the pages load faster -->
   <script src="lib/jquery/jquery.min.js"></script>
   <script src="lib/jquery-ui-1.9.2.custom.min.js"></script>
   <script src="lib/fullcalendar/fullcalendar.min.js"></script>

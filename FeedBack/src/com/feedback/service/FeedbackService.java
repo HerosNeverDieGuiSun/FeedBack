@@ -15,7 +15,7 @@ public class FeedbackService {
 	@Resource
 	private FeedbackMapper fbDAO;
 	
-	public void addFeedback(FeedbackRecord fb) throws FeedbackException{
+	public void addFeedback(FeedbackRecord fb) throws FeedbackException {
 		fbDAO.insert(fb);
 	}
 }

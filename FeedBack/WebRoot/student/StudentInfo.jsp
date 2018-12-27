@@ -46,10 +46,6 @@
 
 
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-    <!--header start-->
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right"></div>
@@ -64,11 +60,6 @@
         </ul>
       </div>
     </header>
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
@@ -104,14 +95,8 @@
           
           
         </ul>
-        <!-- sidebar menu end-->
       </div>
     </aside>
-        <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
     
     <section id="main-content">
       <section class="wrapper site-min-height">
@@ -228,31 +213,17 @@
                           </fieldset>
                           
                         </div>
-                        <!-- /col-lg-8 -->
                       </div>
-                      <!-- /row -->
                     </div>
-                    <!-- /tab-pane -->
                   
                   
                 </div>
-                <!-- /tab-content -->
               </div>
-              <!-- /panel-body -->
             </div>
-            <!-- /col-lg-12 -->
           </div>
-          <!-- /row -->
         </div>
-        <!-- /container -->
       </section>
-      <!-- /wrapper -->
     </section>
-    <!-- /MAIN CONTENT -->
-    <!--main content end-->
-    <!--footer start-->
-    
-    <!--footer end-->
   </section>
   <!-- js placed at the end of the document so the pages load faster -->
   <script src="<%=path%>/student/lib/jquery/jquery.min.js"></script>
@@ -260,10 +231,7 @@
   <script class="include" type="text/javascript" src="<%=path%>/student/lib/jquery.dcjqaccordion.2.7.js"></script>
   <script src="<%=path%>/student/lib/jquery.scrollTo.min.js"></script>
   <script src="<%=path%>/student/lib/jquery.nicescroll.js" type="text/javascript"></script>
-  <!--common script for all pages-->
   <script src="<%=path%>/student/lib/common-scripts.js"></script>
-  <!--script for this page-->
-  <!-- MAP SCRIPT - ALL CONFIGURATION IS PLACED HERE - VIEW OUR DOCUMENTATION FOR FURTHER INFORMATION -->
   
   
 </body>

@@ -33,12 +33,6 @@
   <link href="<%=path%>/admin/css/style.css" rel="stylesheet">
   <link href="<%=path%>/admin/css/style-responsive.css" rel="stylesheet">
 
-  <!-- =======================================================
-    Template Name: Dashio
-    Template URL: https://templatemag.com/dashio-bootstrap-admin-template/
-    Author: TemplateMag.com
-    License: https://templatemag.com/license/
-  ======================================================= -->
   <style>
 	file{
 		font-size:10px;
@@ -91,10 +85,7 @@
 
 <body>
   <section id="container">
-    <!-- **********************************************************************************************************************************************************
-        TOP BAR CONTENT & NOTIFICATIONS
-        *********************************************************************************************************************************************************** -->
-    <!--header start-->
+    
     <header class="header black-bg">
       <div class="sidebar-toggle-box">
         <div class="fa fa-bars tooltips" data-placement="right"></div>
@@ -109,16 +100,12 @@
         </ul>
       </div>
     </header>
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
+    
     <aside>
       <div id="sidebar" class="nav-collapse ">
         <!-- sidebar menu start-->
         <ul class="sidebar-menu" id="nav-accordion">
-          <p class="centered"><a href="profile.html"><img src="img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
+          <p class="centered"><a href="profile.html"><img src="<%=path%>/admin/img/wuyanzu.jpg" class="img-circle" width="80"></a></p>
           <h5 class="centered">小红</h5>
           
          <li class="mt">
@@ -141,13 +128,7 @@
         <!-- sidebar menu end-->
       </div>
     </aside>
-    <!--sidebar end-->
     
-    <!--header end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN SIDEBAR MENU
-        *********************************************************************************************************************************************************** -->
-    <!--sidebar start-->
     <section id="main-content">
       <section class="wrapper">
         <div class="row">
@@ -305,13 +286,6 @@
       </section>
     </section>
 	</section>
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
-    
-  <!-- js placed at the end of the document so the pages load faster -->
   <script src="<%=path %>/superAdm/lib/jquery/jquery.min.js"></script>
   <script src="<%=path %>/superAdm/lib/bootstrap/js/bootstrap.min.js"></script>
   <script class="include" type="text/javascript" src="<%=path %>/superAdm/lib/jquery.dcjqaccordion.2.7.js"></script>

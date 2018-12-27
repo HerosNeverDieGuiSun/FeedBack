@@ -92,11 +92,6 @@
         <!-- sidebar menu end-->
       </div>
     </aside>
-    <!--sidebar end-->
-    <!-- **********************************************************************************************************************************************************
-        MAIN CONTENT
-        *********************************************************************************************************************************************************** -->
-    <!--main content start-->
     <section id="main-content">
       <section class="wrapper">
         <!-- page start-->
@@ -127,15 +122,9 @@
           </div>
         </div>
       </section>
-      <!-- /wrapper -->
     </section>
-    <!-- /MAIN CONTENT -->
-    <!--main content end-->
-    <!--footer start-->
     
-    <!--footer end-->
   </section>
-  <!-- js placed at the end of the document so the pages load faster -->
   <script src="<%=basePath %>student/lib/jquery/jquery.min.js"></script>
   <script src="<%=basePath %>student/lib/bootstrap/js/bootstrap.min.js"></script>
   <script class="include" type="text/javascript" src="<%=basePath %>student/lib/jquery.dcjqaccordion.2.7.js"></script>

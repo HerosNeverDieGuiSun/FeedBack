@@ -346,17 +346,10 @@
             <!-- /content-panel -->
           </div>
           
-          <!-- /col-md-12 -->
         </div>
-        <!-- /row -->
       </section>
    	</section>
 </section>
-    <!--sidebar end-->
-    
-    <!--main content start-->
-    
-	  <!-- js placed at the end of the document so the pages load faster -->
 	  <script src="<%=path%>/superAdm/lib/jquery/jquery.min.js"></script>
 	  <script src="<%=path%>/superAdm/lib/bootstrap/js/bootstrap.min.js"></script>
 	  <script class="include" type="text/javascript" src="<%=path%>/superAdm/lib/jquery.dcjqaccordion.2.7.js"></script>
